@@ -1,117 +1,95 @@
 <!DOCTYPE html>
-<html lang="<?php language_attributes(); ?>" class="no-js">
-<head>
-        <!-- Define Charset -->
-		<meta charset="<?php bloginfo('charset');?>">
-        
-        <!-- Title -->
-        <title><?php bloginfo( 'name' );?></title>
+<html lang="en">
 
+<head>
+	<!-- Google Adsense link -->
+	<script data-ad-client="ca-pub-9496352952434798" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Define Charset -->
+		<meta charset="utf-8"/>
+        
+        <!-- Page Title -->
+		<title>Anik Khan | Personal Website</title>
+        
         <!-- Responsive Metatag -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	
+    	 <!-- Short description of your web-page -->
+    	<meta name="description" content="Anik-Khan | Personal Blog Responsive HTML5 Template">
+		
+        <!-- Important to put relevant and correct keywords in your meta tags in the source of your web-page -->
+    	<meta name="keywords" content="Personal Blog Responsive HTML5 Template, Bootstrap Personal Blog Templates" />
         
-        <meta name="description" content="<?php bloginfo( 'description' );?>">
+        <link rel="shortcut icon" href="img/favicon.png" >
+        
         <!-- Custom styles -->
-    	<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>/css/custom.css">
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
 
     	<!-- Bootstrap core CSS -->
-    	<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' );?> /css/bootstrap.css">
+    	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		
 		<!-- Custom fonts -->
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/font/font-awesome/css/font-awesome.min.css'; ?>" />
-         <?php wp_head();?>
+    	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
 </head>
 
-  	<body <?php body_class();?>>
-
-<!-- ======================= Main Navigation Section Start Here ================================ -->
+  	<body>
+    
     	<!-- Main Navigation -->
     	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       		<div class="container">
         		<a class="navbar-brand js-scroll-trigger" href="index.html">
-                	<img src="/img/logo.svg" height="40px">
+                	<img src="img/logo.svg" height="40px">
                 </a>
                 <!-- Toggle get grouped for better mobile display -->
             	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
               	<span class="navbar-toggler-icon"></span>
             	</button>
         		<div class="collapse navbar-collapse" id="navbarResponsive">
-                    <?php wp_nav_menu( array(
-                        'menu' => 'main_menu',
-                        'menu_class' => 'navbar-nav nav-pills ml-auto',
-                        'container' => '',
-                        'li_class' => 'nav-item',
-                        'a_class' => 'nav-link',
-                        'active_class' => 'active',
-                    )); ?>
+          			<ul class="navbar-nav nav-pills ml-auto">
+                    	<li class="nav-item">
+              				<a class="nav-link active" href="index.html">Home</a>
+            			</li>
+            			<li class="nav-item">
+              				<a class="nav-link" href="about.html">About <span>Me</span></a>
+            			</li> 
+						<li class="nav-item">
+                      		<a class="nav-link" href="portfolio.html">Portfolio</a>
+                    	</li>
+                    	<li class="nav-item">
+                      		<a class="nav-link" href="blog.html">Blog</a>
+                    	</li> 
+                    	<li class="nav-item">
+                      		<a class="nav-link" href="contact.html">Contact <span>Me</span></a>
+                    	</li>
+                  	</ul>
         		</div>
       		</div>
     	</nav>
-<!-- ======================= Hero Section Start Here ================================ -->
-    <div class="container-fluid">
+    
     	<!-- Header Top Section -->
     	<header class="header-top">
-      		<div class="container p-5">
+      		<div class="container pt-5">
         		<div class="row">
-          			<div class="col-lg-6 col-md-6 col-sm-6 text-center">
-            		    <!-- <img class="img-fluid" src="img/hero.svg" alt="header image"> -->
-            		    <img class="img-fluid" src="<?php echo get_theme_mod('person_image');?>" alt="header image">
-
+          			<div class="col-lg-6 col-md-6 col-sm-6">
+            			<img class="img-fluid" src="img/hero.svg" alt="header image">
           			</div>
           			<div class="col-lg-6 col-md-6 col-sm-6">
 						<div class="hello">
-							<!-- <h2>hello</h2> -->
-                            <h2><?php echo get_theme_mod('welcome_text');?></h2>
+							<h2>hello</h2>
 						</div>
 						<div class="name mt-4">
-							<h1><span>I'm </span><span><?php echo get_theme_mod('hero_heading_name');?></span></h1>
-							<h5><?php echo get_theme_mod('hero_expertise');?></h5>
-
+							<h1><span>I'm</span><span> Anik Khan</span></h1>
+							<h5>Web Developer & Graphics Designer</h5>
 						</div>
 						<div class="resume mt-4">
-							<a href="<?php echo get_theme_mod('hero_btn_url');?>"><?php echo get_theme_mod('hero_btn_text');?>E</a>
-						
-                        </div>
+							<a href="https://drive.google.com/file/d/1JYMyS_MP__SqEEWSdGAoMWSOKsXfKEez/view?usp=sharing">MY RESUME</a>
+						</div>
 						<div class="social">
-                            <!--
 							<a href="https://www.facebook.com/codeanik"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 							<a href="https://twitter.com/code_anik"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 							<a href="https://www.behance.net/codeanik"><i class="fa fa-behance" aria-hidden="true"></i></a>
 							<a href="https://www.linkedin.com/in/codeanik"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 							<a href="https://github.com/CodeAnik"><i class="fa fa-github" aria-hidden="true"></i></a>
 							<a href="https://www.instagram.com/codeanik"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                            -->
-                            <?php if (get_theme_mod('social_media_facebook_link')) : ?>
-                                <a href="<?php echo esc_url(get_theme_mod('social_media_facebook_link')); ?>" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <?php endif; ?>
-                            
-                            <?php if (get_theme_mod('social_media_twitter_link')) : ?>
-                                <a href="<?php echo esc_url(get_theme_mod('social_media_twitter_link')); ?>" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <?php endif; ?>
-                            
-                            <?php if (get_theme_mod('social_media_instagram_link')) : ?>
-                                <a href="<?php echo esc_url(get_theme_mod('social_media_instagram_link')); ?>" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                            <?php endif; ?>
-                            
-                            <?php if (get_theme_mod('social_media_linkedin_link')) : ?>
-                                <a href="<?php echo esc_url(get_theme_mod('social_media_linkedin_link')); ?>" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            <?php endif; ?>
-
-                            <?php if (get_theme_mod('social_media_behance_link')) : ?>
-                                <a href="<?php echo esc_url(get_theme_mod('social_media_behance_link')); ?>" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
-                            <?php endif; ?>
-
-                            <?php if (get_theme_mod('social_media_dribble_link')) : ?>
-                                <a href="<?php echo esc_url(get_theme_mod('social_media_dribbble_link')); ?>" target="_blank"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                            <?php endif; ?>
-
-                            <?php if (get_theme_mod('social_media_github_link')) : ?>
-                                <a href="<?php echo esc_url(get_theme_mod('social_media_github_link')); ?>" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                            <?php endif; ?>
-                            
-                            <?php if (get_theme_mod('social_media_youtube_link')) : ?>
-                                <a href="<?php echo esc_url(get_theme_mod('social_media_youtube_link')); ?>" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                            <?php endif; ?>
                         </div>
           			</div>
         		</div>
@@ -120,49 +98,21 @@
 		
         <!-- About Me Section -->
 		<section id="about" class="mt-4">
-            <div class="container-fluid">
+        	<div class="container-fluid">
             	<div class="about-me-heading">
-                    <h1><span>About</span><span> Me</span></h1>	
+                    <h1><span>About</span><span>Me</span></h1>	
                 </div>
-        	</div>
-        	<div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-12 col-sm-12">
-                        <div class="about-content mt-4">
-                            <p><?php echo esc_html( get_theme_mod( 'about_myself' ) ); ?></p>
-                            <p><?php echo esc_html( get_theme_mod( 'about_myself_additional' ) ); ?></p>
-                        </div>
-                    </div>
-                    <div class="offset-lg-1 col-lg-6 col-md-12 col-sm-12">
-                        <div class="row">
-                            <?php
-                            for ( $i = 1; $i <= 2; $i++ ) {
-                                $skill_title = get_theme_mod( 'skill_' . $i . '_title' );
-                                $skill_icon = get_theme_mod( 'skill_' . $i . '_icon' );
-                                if ( ! empty( $skill_title ) && ! empty( $skill_icon ) ) {
-                                    ?>
-                                    <div class="col-md-6 col-lg-6 col-sm-6 skill mb-2">
-                                        <span><img class="img-fluid" src="<?php echo esc_attr( $skill_icon ); ?>" alt="<?php echo esc_attr( $skill_title ); ?>"></span><?php echo esc_html( $skill_title ); ?>
-                                    </div>
-                                    <?php
-                                }
-                            }
-                            ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-				
+        	</div>						
             
-			<!-- <div class="container">
+			<div class="container">
 				<div class="row">
 					<div class="col-lg-5 col-md-12 col-sm-12">
 						<div class="about-content mt-4">
 							<p>I'm <b>Anik Khan.</b> I am Website Developer. and I'm very passionate and dedicated to my work.I have a lot of experienceas a professional Website Develop, I have acquired the skills and knowledge necessary to make your project a success. </p>
 							<p>To build my career in a challenging environment, where I can utilize my knowledge, skill, and sincerity to achieve desirable goals through a team-based management approach.</p>
-                        </div>
+						</div>
 					</div>
-                    <div class="offset-lg-1 col-lg-6 col-md-12 col-sm-12">
+					<div class="offset-lg-1 col-lg-6 col-md-12 col-sm-12">
 						<div class="row">
 							<div class="col-md-6 col-lg-6 col-sm-6 skill mb-2">
 								<span><img class="img-fluid" src="img/web-design.png" alt="Web Develop"></span>Web Develop
@@ -182,50 +132,11 @@
 						</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
 		</section>
 		
-
-<!--================================= My Skills Section =================================== -->
-
-
-
-        <?php
-
-        // Generate the front-end markup
-        function my_skills_frontend_markup() {
-            echo '<section id="skill-progress" class="mt-5">';
-            echo '<div class="container-fluid">';
-            echo '<div class="my-skill-heading">';
-            echo '<h1><span>My</span><span> Skills</span></h1>';
-            echo '</div>';
-            echo '</div>';
-            echo '<div class="clearfix"></div>';
-            echo '<div class="container mt-4">';
-            echo '<div class="row">';
-
-            for ($i = 1; $i <= 20; $i++) {
-                $skill_title = get_theme_mod('skill' . $i . '_title', '');
-                $skill_level = get_theme_mod('skill' . $i . '_level', 0);
-
-                if (!empty($skill_title) && $skill_level > 0) {
-                    echo '<div class="col-md-6 col-lg-6 col-sm-6 mb-4">';
-                    echo '<span>' . esc_html($skill_title) . '</span>';
-                    echo '<span class="float-right">' . esc_html($skill_level) . '%</span>';
-            echo '<div class="skillbar clearfix mb-3" data-percent="' . esc_attr($skill_level) . '">';
-            echo '<div class="skillbar-bar"></div>';
-            echo '</div>';
-            echo '</div>';
-                    }
-                }
-
-                echo '</div>';
-                echo '</div>';
-                echo '</section>';
-            }
-        ?>
-        <!-- 		
-        <section id="skill-progress" class="mt-5">
+        <!-- My Skills Section -->
+		<section id="skill-progress" class="mt-5">
         	<div class="container-fluid">
             	<div class="my-skill-heading">
                     <h1><span>My</span><span> Skills</span></h1>	
@@ -335,10 +246,8 @@
 				</div>
 			</div>
 		</section>
-		 -->
-
-
-<!-- ====================================== Work Exp Section =================================== -->
+		
+        <!-- Work Exp Section -->
 		<section id="work-exp" class="mt-5">
         	<div class="container-fluid">
             	<div class="work-exp-heading">
@@ -1047,42 +956,13 @@
 			</div>
 		</footer>
 
-    	<!-- Bootstrap core JavaScript 
+    	<!-- Bootstrap core JavaScript -->
     	<script type="text/javascript" src="js/jquery.min.js"></script>
     	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-        -->
-
-        <?php wp_footer(); ?>
         
-        <script>
-            (function ($) {
-                $(document).ready(function () {
-                    var skillsCount = 20; // Maximum number of skills
-
-                    $('#add-new-skill').on('click', function () {
-                        // Find the last added skill
-                        var lastSkillIndex = $('.skill-title').last().data('index');
-
-                        if (lastSkillIndex < skillsCount) {
-                            var newSkillIndex = lastSkillIndex + 1;
-
-                            // Clone the skill fields template
-                            var skillFieldsTemplate = $('.skill-fields-template').clone();
-
-                            // Update the index of the new skill fields
-                            skillFieldsTemplate.find('.skill-title').attr('data-index', newSkillIndex);
-                            skillFieldsTemplate.find('.skill-level').attr('data-index', newSkillIndex);
-
-                            // Remove the hidden class and add the new skill fields to the DOM
-                            skillFieldsTemplate.removeClass('skill-fields-template hidden').insertBefore('.skill-fields-template');
-
-                            // Show the new skill fields
-                            skillFieldsTemplate.show();
-                        }
-                    });
-                });
-            })(jQuery);
-        </script>
+        <!-- Custom JavaScript -->
+        <script type="text/javascript" src="js/custom.js"></script>
+    
   	</body>
 
 </html>

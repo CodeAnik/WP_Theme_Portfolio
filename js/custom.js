@@ -1,3 +1,4 @@
+
 // Skillbar animation script
 jQuery(document).ready(function(){
 	// Author code here
